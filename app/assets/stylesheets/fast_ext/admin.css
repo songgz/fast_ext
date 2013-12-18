@@ -1,0 +1,94 @@
+#fast-ext-loading {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -70px
+}
+
+#fast-ext-loading .title {
+    font-family: "Exo", sans-serif;
+    font-size: 2em;
+    color: gray;
+    text-align: center;
+    white-space: nowrap;
+    display: block
+}
+
+#fast-ext-loading .logo {
+    background: url(loading.gif) no-repeat center;
+    display: block;
+    height: 120px
+}
+
+.fast-ext-header {
+    padding:10px;
+}
+
+.fast-ext-header span.caption {
+    color:#3e6aaa;
+    font-size: 22px !important;
+    text-shadow: 0 2px 0 white;
+}
+
+.fast-ext-header span.version {
+    margin-left: 10px;
+    font-size:10px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0 1px 0 white;
+}
+
+.fast-ext-home {
+    background-image: url( application/application_home.png ) !important;
+}
+.fast-ext-menu {
+    background-image: url( application/application_side_tree.png ) !important;
+}
+.fast-ext-tree-expand {
+    background-image: url( arrow/arrow_divide.png ) !important;
+}
+.fast-ext-tree-collapse {
+    background-image: url( arrow/arrow_join.png ) !important;
+}
+
+
+
+
+.fast-ext-login-title {
+    background-image: url( locked.png ) !important;
+}
+.fast-ext-login-submit {
+      background-image: url( key_go.png ) !important;
+}
+.fast-ext-login-cancel {
+    background-image: url( cross.png ) !important;
+}
+.fast-ext-login-header {
+    background: transparent url("lock.png") no-repeat 97% 50%;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 10px 45px 10px 10px;
+}
+.fast-ext-upload {
+    background-image: url( upload.png ) !important;
+}
+
+
+.fast-ext-btn-new {
+    background-image: url( application/application_form_add.png ) !important;
+}
+.fast-ext-btn-edit {
+    background-image: url( application/application_form_edit.png ) !important;
+}
+.fast-ext-btn-list {
+    background-image: url( application/application_view_columns.png ) !important;
+}
+.fast-ext-btn-del {
+    background-image: url( application/application_form_delete.png ) !important;
+}
+.fast-ext-btn-save {
+    background-image: url( table/table_save.png ) !important;
+}
+.fast-ext-btn-help {
+    background-image: url( table/help.png ) !important;
+}
