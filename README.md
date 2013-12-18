@@ -10,9 +10,9 @@ This project rocks and uses MIT-LICENSE.
 For example, the syntax for view like this:
 By default your view is configured in the file config/initializers/fast_ext_config.rb.
 ```ruby
-FastExt::View.instance.config do |conf|
-  conf.win :m_list, title: '数据字典', window_kind: 'maintain' do |w|
-    w.tab :m_list, title: '枚举', entity:'FastExt::MList', members:[
+  FastExt::View.instance.config do |conf|
+    conf.win :m_list, title: '数据字典', window_kind: 'maintain' do |w|
+      w.tab :m_list, title: '枚举', entity:'FastExt::MList', members:[
         {name:'id', title: 'ID', datatype:'VInteger', readonly: true},
         {name:'title', title: '标题', datatype:'VString'},
         {name:'print_text', title: '打印文本', datatype:'VText'},
@@ -30,7 +30,7 @@ FastExt::View.instance.config do |conf|
         {name:'name', title: '标识', datatype:'VText'}
       ]
     end
-end
+  end
 ```
 
 
