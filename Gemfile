@@ -15,3 +15,5 @@ gemspec
 
 gem 'mysql2', '~>0.3.14'
 gem 'kaminari'
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
