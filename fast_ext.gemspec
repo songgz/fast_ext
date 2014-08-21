@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.1.4"
-  s.add_dependency "awesome_nested_set", "~> 2.1.5"
+  s.add_dependency "awesome_nested_set", "~> 3.0.0"
   s.add_dependency "bcrypt-ruby"
 
   #s.add_development_dependency "mysql2"
