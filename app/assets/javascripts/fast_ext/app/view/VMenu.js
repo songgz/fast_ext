@@ -1,3 +1,7 @@
+Ext.define('FastExt.MenuTree', {
+    extend: 'Ext.data.TreeModel',
+    fields:['id', {name:'text', mapping:'title'},'leaf','expanded', 'window']
+});
 Ext.define('FastExt.view.VMenu', {
     extend:'Ext.tree.Panel',
     requires:['FastExt.store.MWindowMgr'],
@@ -18,19 +22,17 @@ Ext.define('FastExt.view.VMenu', {
     initComponent: function(){
       this.store = Ext.create('Ext.data.TreeStore', {
           autoLoad:true,
-          fields:['id', {name:'name', mapping:'title'},'leaf','expanded', 'window'],
+          model: 'FastExt.MenuTree',
+          //fields:['id', {name:'text', mapping:'title'},'leaf','expanded', 'window'],
           proxy:{
               type:'ajax',
               url:'/fast_ext/m_menu_items.json',
               reader:{
-                  type:'json',
-                  root:'',
-                  record:''
-                  //successProperty:''
+                  type:'json'
               }
           },
           root:{
-              name:this.title,
+              text:this.title,
               id: 1,
               expanded:true
           }
