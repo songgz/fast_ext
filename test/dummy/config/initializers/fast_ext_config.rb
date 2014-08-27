@@ -1,7 +1,7 @@
 # encoding: utf-8
 FastExt::View.instance.config do |conf|
   conf.project = 'FastExt Rapid Development Framework'
-  conf.version = "version #{FastExt::VERSION} built on ExtJS 4.2.1"
+  conf.version = "version #{FastExt::VERSION} built on ExtJS 5.0.1"
   conf.copyright = 'Copyright 2013-2014 sgzhe@163.com.'
 
   default = [
