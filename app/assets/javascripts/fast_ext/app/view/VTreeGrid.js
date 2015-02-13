@@ -7,6 +7,7 @@ Ext.define('FastExt.view.VTreeGrid', {
     multiSelect: false,
     singleExpand: true,
     border: false,
+    xtype: 'tree-grid',
     initComponent: function () {
         this.title = this.getValue('title');
         this.columns = this.getTreeGColumns();

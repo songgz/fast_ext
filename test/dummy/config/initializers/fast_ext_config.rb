@@ -1,8 +1,8 @@
 # encoding: utf-8
 FastExt::View.instance.config do |conf|
   conf.project = 'FastExt Rapid Development Framework'
-  conf.version = "version #{FastExt::VERSION} built on ExtJS 5.0.1"
-  conf.copyright = 'Copyright 2013-2014 sgzhe@163.com.'
+  conf.version = "version #{FastExt::VERSION} built on ExtJS 5.1.0"
+  conf.copyright = 'Copyright 2013-2015 sgzhe@163.com.'
 
   default = [
       {name: 'entity_kind', title: '实体种类', datatype: 'VRadio'},

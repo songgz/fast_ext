@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source "http://rubygems.org"
 
 # Declare your gem's dependencies in fast_ext.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -13,7 +13,8 @@ gemspec
 # To use debugger
 # gem 'debugger'
 
-gem 'mysql2', '~>0.3.14'
+gem 'responders', '~> 2.0'
+gem 'mysql2', '~>0.3.17'
 gem 'kaminari'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 

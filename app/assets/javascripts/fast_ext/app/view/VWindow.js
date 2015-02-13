@@ -5,8 +5,10 @@ Ext.define('FastExt.view.VWindow', {
     valueObject: {},
     activeTab: 0,
     closable: true,
-    tabPosition : "left",
+    tabPosition: 'left',
+    tabRotation: 0,
     border:true,
+
     initComponent:function(){
         this.winCtx = FastExt.Env.getCtx();
         this.title = this.getValue('title');
