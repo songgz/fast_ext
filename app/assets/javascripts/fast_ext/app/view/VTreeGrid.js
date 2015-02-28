@@ -49,11 +49,12 @@ Ext.define('FastExt.view.VTreeGrid', {
                     root:'',
                     record:''
                     //successProperty:''
-                }
+                },
+                extraParams: this.tab.getParams()
             },
             root: {
                 text:'Root',
-                id:'',
+                id:'root',
                 expanded: true
             },
             fields: this.getTreeGFields()

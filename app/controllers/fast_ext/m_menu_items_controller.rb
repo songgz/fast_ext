@@ -7,16 +7,12 @@ module FastExt
     respond_to :html, :xml, :json
 
     def index
-      @m_menu_items = params[:node] == '' ? MMenuItem.roots : MMenuItem.where({
-                                                                                    :parent_id => params[:node]
-                                                                                }.delete_if { |k, v| v.blank? })
-
-      #if params[:id] == 'root'
-      #  @m_menu_items = MMenuItem.roots
-      #else
-      #  @m_menu_items = MMenuItem.where({:parent_id => params[:id]}.delete_if { |k, v| v.blank?})
+      if params[:node] == 'root'
+        @m_menu_items = MMenuItem.roots.where({:m_menu_id => params[:m_menu_id]}.delete_if { |k, v| v.blank? })
+      else
+        @m_menu_items = MMenuItem.where({:parent_id => params[:node]}.delete_if { |k, v| v.blank?})
         #@m_menu_items = paginate(@items)
-      #end
+      end
       respond_with(@m_menu_items.to_json(:include => [:m_menu, :createdbyorg, :createdby, :updatedby], :methods => [:leaf, :expanded]))
     end
 
