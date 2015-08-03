@@ -1,6 +1,6 @@
-source "http://rubygems.org"
+source 'http://rubygems.org'
 
-# Declare your gem's dependencies in fast_ext.gemspec.
+# Declare your gem's dependencies in re.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 gemspec
@@ -10,11 +10,9 @@ gemspec
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 
-# To use debugger
-# gem 'debugger'
+# To use a debugger
+# gem 'byebug', group: [:development, :test]
 
 gem 'responders', '~> 2.0'
-gem 'mysql2', '~>0.3.17'
-gem 'kaminari'
-gem 'tzinfo-data', platforms: [:mingw, :mswin]
-
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+#gem 'mysql2'
